@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adrian's Games</title>
+<meta name="description" content="Two small games that work offline and open full screen from an iPhone home screen.">
+<meta name="theme-color" content="#10243f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Adrian's Games">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png" type="image/png">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #f4f7fb;
+    background:
+      radial-gradient(1200px 500px at 50% -10%, #1d4e89 0%, transparent 55%),
+      #10243f;
+    padding:
+      calc(28px + env(safe-area-inset-top))
+      calc(18px + env(safe-area-inset-right))
+      calc(28px + env(safe-area-inset-bottom))
+      calc(18px + env(safe-area-inset-left));
+  }
+  main {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+  h1 {
+    margin: 8px 0 8px;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+  .lead {
+    margin: 0 0 22px;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    color: #d5e4f5;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  a.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 92px;
+    padding: 18px 20px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: center;
+    touch-action: manipulation;
+  }
+  a.play:active { transform: translateY(2px); }
+  a.play:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+  }
+  a.dog {
+    color: #ffcc00;
+    background: #0b3d1e;
+    box-shadow: 0 8px 0 #062614;
+  }
+  a.make {
+    color: #fff;
+    background: linear-gradient(180deg, #ff6fb8, #9b5de5);
+    box-shadow: 0 8px 0 #5a2aa8;
+  }
+  .howto {
+    margin-top: 28px;
+    padding: 16px 16px 14px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .howto h2 {
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+  }
+  .howto p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Adrian's Games</h1>
+  <p class="lead">Each game works offline after the first open.</p>
+  <nav aria-label="Games">
+    <a class="play dog" href="super-dogs-rush/">Super Dogs Rush</a>
+    <a class="play make" href="makeover-rescue/">Makeover Rescue</a>
+  </nav>
+  <section class="howto">
+    <h2>Add to Home Screen</h2>
+    <p>Safari &gt; Share &gt; Add to Home Screen</p>
+  </section>
+</main>
+</body>
+</html>
