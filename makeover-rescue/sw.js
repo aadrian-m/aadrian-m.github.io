@@ -1,5 +1,5 @@
 // Offline cache for Makeover Rescue. Paths are relative to this file so the worker stays inside /makeover-rescue/.
-const CACHE = 'makeover-rescue-v1';
+const CACHE = 'makeover-rescue-v5';
 const PRECACHE = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (event) => {
